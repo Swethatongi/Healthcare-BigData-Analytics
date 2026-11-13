@@ -1,0 +1,7 @@
+Broad:Stress-Smoking	2
+Broad:Virus	1555
+Broad:bacteria	2777
+Specific:ARDS	2
+Specific:COVID-19	58
+Specific:SARS	4
+Specific:Streptococcus	5
