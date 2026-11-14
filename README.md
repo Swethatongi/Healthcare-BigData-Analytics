@@ -68,7 +68,53 @@ Install the Python dependencies:
 
 ```bash
 pip install -r requirements.txt
-```
+## Project Results and Analysis
+
+### 1. Disease Distribution
+
+| Disease Category | Number of Images |
+|---|---:|
+| Normal | 1,576 |
+| Pneumonia | 4,334 |
+| Total | 5,910 |
+
+![Disease Distribution](output/disease_distribution.png)
+
+### 2. Training and Testing Dataset Distribution
+
+| Dataset | Number of Images |
+|---|---:|
+| Training | 5,286 |
+| Testing | 624 |
+
+![Dataset Split](output/dataset_split.png)
+
+### 3. Virus Category Analysis
+
+MapReduce was used to analyze virus and bacterial categories.
+
+![Virus Distribution](output/virus_distribution.png)
+
+### 4. Machine Learning Results
+
+- Algorithm: Logistic Regression
+- Feature Extraction: HOG-style features
+- Training Images: 5,286
+- Testing Images: 624
+- Accuracy: 78.37%
+
+#### Confusion Matrix
+
+| Actual / Predicted | Normal | Pneumonia |
+|---|---:|---:|
+| Normal | 105 | 129 |
+| Pneumonia | 6 | 384 |
+
+### Conclusion
+
+The project successfully demonstrates healthcare dataset analysis using Hadoop, HDFS, MapReduce, Python visualization, and Machine Learning.
+
+The classification model achieved 78.37% accuracy on the test dataset. This is an educational project and is not intended for clinical diagnosis.```
 
 Hadoop must be installed and configured separately to execute the Hadoop Streaming jobs.
 
